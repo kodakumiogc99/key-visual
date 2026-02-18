@@ -3,3 +3,6 @@ __pycache__/
 user_settings.json
 .python-version
 uv.lock
+build/
+dist/
+*.spec

@@ -36,6 +36,25 @@ A modern, customizable Python application to visualize real-time keyboard inputs
     uv add PyQt6 pynput
     ```
 
+## Building the Executable
+
+To package the application into a standalone `.exe` file:
+
+1. **Install PyInstaller**:
+
+    ```powershell
+    uv add --dev pyinstaller
+    ```
+
+2. **Build**:
+
+    ```powershell
+    uv run pyinstaller --noconsole --onefile --name "KeystrokeVisualizer" app.py
+    ```
+
+3. **Locate the EXE**:
+    The compiled file will be in the `dist/` folder.
+
 ## Usage
 
 1. **Run the Application**:
